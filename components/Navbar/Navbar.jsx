@@ -76,11 +76,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='sticky top-0 bg-white border-b  z-50'>
+      <nav className='sticky top-0 h-[0px] bg-transparent border-transparent z-50 md:h-auto md:bg-white'>
         {/* ROW */}
         <div className='mx-auto max-w-[1720px] px-2 sm:px-6 lg:px-8'>
           {/* FLEX BOX */}
-          <div className='relative flex  h-16 md:h-20 items-center'>
+          <div className='relative flex  h-none md:h-20 items-center'>
             <MenuDropDown 
               setIsMobileMenuOpen={toggleMobileMenu} 
               isMobileMenuOpen={isMobileMenuOpen}

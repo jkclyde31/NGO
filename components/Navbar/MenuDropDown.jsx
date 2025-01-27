@@ -1,11 +1,11 @@
 const MenuDropDown = ({setIsMobileMenuOpen, isMobileMenuOpen}) => {
   return (
-    <div className='absolute inset-y-0 left-0 flex items-center md:hidden '>
+    <div className='absolute inset-y-0 left-0 top-1 flex items-center md:hidden h-10'>
         {/* <!-- Mobile menu button--> */}
         <button
         type='button'
         id='mobile-dropdown-button'
-        className='border-2 relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
+        className='border-2 relative inline-flex items-center justify-center rounded-md p-1 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
         aria-controls='mobile-menu'
         aria-expanded='false'
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
