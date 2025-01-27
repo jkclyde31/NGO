@@ -5,7 +5,7 @@ import PlayIcon from "@/public/play-icon.png";
 const Banner = () => {
   return (
     <div 
-    className="bg-cover bg-center pt-[100px] md:pt-[200px] h-[100vh] md:h-auto flex flex-col justify-center items-center"
+    className="bg-cover bg-center pt-[100px] md:pt-[200px] h-[95vh] md:h-auto flex flex-col justify-center items-center"
     style={{
       backgroundImage: `url(${'/images/bg-banner.png'})`,
     }}
