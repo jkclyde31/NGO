@@ -1,29 +1,24 @@
 import Image from "next/image";
-import image from '/public/what_we_do.png';
-import icon1 from '/public/icons/icon.png';
-import icon2 from '/public/icons/icon-1.png';
-import icon3 from '/public/icons/icon-2.png';
-import icon4 from '/public/icons/icon-3.png';
 
 const WhatWeDo = () => {
   const features = [
     {
-      icon: icon1,
+      icon: "/icons/icon.png",
       title: "Family support",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
     },
     {
-      icon: icon2,
+      icon: "/icons/icon-1.png",
       title: "Health benefits",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
     },
     {
-      icon: icon3,
+      icon: "/icons/icon-2.png",
       title: "Scholarships",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
     },
     {
-      icon: icon4,
+      icon: "/icons/icon-3.png",
       title: "Therapy",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
     }
@@ -33,7 +28,9 @@ const WhatWeDo = () => {
     <div className="px-[15px] bg-[#FCEDC6] py-[25px] md:py-[96px]">
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-[40px] mb-[64px] space-y-8 md:space-y-0 md:space-x-12">
         <div className="w-full md:max-w-[607px]">
-          <p className="text-center md:text-start text-[16px] font-bold tracking-[2px] text-[1D2130] mb-[32px]">WHAT WE DO</p>
+          <p className="text-center md:text-start text-[16px] font-bold tracking-[2px] text-[1D2130] mb-[32px]">
+            WHAT WE DO
+          </p>
           <h2 className="text-center md:text-start text-[48px] font-bold text-[1D2130] leading-[120%] mb-[32px]">
             Some services we provide for our children
           </h2>
@@ -41,7 +38,7 @@ const WhatWeDo = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
           </p>
 
-          <div className="grid">
+          <div className="grid gap-8 mt-8">
             {features.map((feature, index) => (
               <div key={index} className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
                 <div>
@@ -68,8 +65,10 @@ const WhatWeDo = () => {
 
         <div className="w-full md:w-auto">
           <Image 
-            src={image} 
-            alt="About Video" 
+            src="/what_we_do.png"
+            alt="About Video"
+            width={500}
+            height={300}
             className="w-full md:w-full"
           />
         </div>

@@ -19,9 +19,9 @@ const ProjectsSection = () => {
         </div>
 
         {/* Bottom */}
-        <div className="max-w-[1280px] mx-auto flex justify-between gap-4">
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row  justify-between gap-4 ">
          {/* Item 1 */}
-            <div className="bg-none max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px] rounded-xl"  style={{
+            <div className="bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px] rounded-xl"  style={{
                 backgroundImage: `url(${project1.src})`, 
                 backgroundSize: "cover", 
                 backgroundPosition: "center",
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
 
 
              {/* Item 2 */}
-             <div className="bg-none max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px]  rounded-xl"  style={{
+             <div className="bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px]  rounded-xl"  style={{
                 backgroundImage: `url(${project2.src})`, 
                 backgroundSize: "cover", 
                 backgroundPosition: "center",
@@ -67,7 +67,7 @@ const ProjectsSection = () => {
 
 
                {/* Item 3 */}
-               <div className="bg-none max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px]  rounded-xl"  style={{
+               <div className="bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px]  rounded-xl"  style={{
                 backgroundImage: `url(${project3.src})`, 
                 backgroundSize: "cover", 
                 backgroundPosition: "center",
