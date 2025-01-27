@@ -5,11 +5,11 @@ import PlayIcon from "@/public/play-icon.png";
 const Banner = () => {
   return (
     <div 
-      className="bg-cover bg-center  pt-[100px] md:pt-[200px] h-[100vh] md:h-auto"
-      style={{
-        backgroundImage: `url(${'/images/bg-banner.png'})`,
-      }}
-    >
+    className="bg-cover bg-center pt-[100px] md:pt-[200px] h-[100vh] md:h-auto flex flex-col justify-center items-center"
+    style={{
+      backgroundImage: `url(${'/images/bg-banner.png'})`,
+    }}
+  >
       {/* text */}
       <div className="row max-w-[1700px] w-full mx-auto px-[15px]">
         <h1 className="max-w-full md:max-w-[640px] text-[45px] md:text-[64px] text-white font-bold text-center mb-[48px] md:leading-[120%]" >
