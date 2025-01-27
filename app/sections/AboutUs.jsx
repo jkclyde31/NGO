@@ -51,6 +51,8 @@ const AboutUs = () => {
               <Image
                 src={sponsor}
                 alt={`Sponsor ${index + 1}`}
+                width={300}
+                height={300}
                 className="max-w-[120px] h-auto opacity-60 hover:opacity-100 transition-opacity"
               />
             </div>

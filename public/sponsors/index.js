@@ -1,9 +1,9 @@
-import sponsor from "./sponsor.png"
-import sponsor1 from "./sponsor1.png"
-import sponsor2 from "./sponsor2.png"
-import sponsor3 from "./sponsor3.png"
-import sponsor4 from "./sponsor4.png"
-import sponsor5 from "./sponsor5.png"
+const sponsor = "/sponsors/sponsor.png";
+const sponsor1 = "/sponsors/sponsor1.png";
+const sponsor2 = "/sponsors/sponsor2.png";
+const sponsor3 = "/sponsors/sponsor3.png";
+const sponsor4 = "/sponsors/sponsor4.png";
+const sponsor5 = "/sponsors/sponsor5.png";
 
 
 export {sponsor, sponsor1, sponsor2, sponsor3, sponsor4, sponsor5}

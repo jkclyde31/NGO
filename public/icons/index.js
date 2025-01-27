@@ -1,6 +1,7 @@
-import icon1 from './icon-1.png';
-import icon2 from './icon-2.png';
-import icon3 from './icon-3.png';
-import icon4 from './icon.png';
+// Instead of imports, use public URLs:
+const icon1 = '/icons/icon-1.png';
+const icon2 = '/icons/icon-2.png';
+const icon3 = '/icons/icon-3.png';
+const icon4 = '/icons/icon.png';
 
-export {icon1, icon2, icon3, icon4}
+export { icon1, icon2, icon3, icon4 };
