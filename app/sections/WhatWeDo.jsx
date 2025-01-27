@@ -46,7 +46,7 @@ const WhatWeDo = () => {
               <div key={index} className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
                 <div>
                   <Image
-                    src={feature.icon}
+                    src={feature.icon.src}
                     alt={feature.title}
                     width={32}
                     height={32}
