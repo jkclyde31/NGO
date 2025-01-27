@@ -1,9 +1,9 @@
 import Image from "next/image";
-import image from '@/public/what_we_do.png';
-import icon1 from '@/public/icons/icon.png';
-import icon2 from '@/public/icons/icon-1.png';
-import icon3 from '@/public/icons/icon-2.png';
-import icon4 from '@/public/icons/icon-3.png';
+import image from '/public/what_we_do.png';
+import icon1 from '/public/icons/icon.png';
+import icon2 from '/public/icons/icon-1.png';
+import icon3 from '/public/icons/icon-2.png';
+import icon4 from '/public/icons/icon-3.png';
 
 const WhatWeDo = () => {
   const features = [
@@ -46,7 +46,7 @@ const WhatWeDo = () => {
               <div key={index} className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
                 <div>
                   <Image
-                    src={feature.icon.src}
+                    src={feature.icon}
                     alt={feature.title}
                     width={32}
                     height={32}
