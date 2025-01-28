@@ -8,18 +8,18 @@ const AboutUs = () => {
   return (
     <div className="px-[15px] ">
       {/* Top */}
-      <div className="max-w-[1200px] mx-auto px-4 flex flex-col lg:flex-row justify-between items-center mt-[25px] md:mt-[40px] lg:mt-[86px] mb-[64px] gap-12">
+      <div className="max-w-[1200px] mx-auto px-4 flex flex-col lg:flex-row justify-between items-center mt-[25px] md:mt-[40px] lg:mt-[86px] mb-[25px] md:mb-[64px] gap-12">
         {/* Left Side */}
         <div className="w-full lg:max-w-[607px]">
           <p className="text-center lg:text-start text-[16px] font-bold tracking-[2px] text-[1D2130] mb-[15px] md:mb-[32px]">KNOW ABOUT US</p>
-          <h2 className="text-center lg:text-start text-[48px] font-bold text-[1D2130] leading-[120%] mb-[25px] md:mb-[32px]">
+          <h2 className="text-center lg:text-start  text-[38px] sm:text-[48px] font-bold text-[1D2130]  leading-[110%] sm:leading-[120%] mb-[15px] sm:mb-[25px] md:mb-[32px]">
             We provide a place for children with special needs
           </h2>
           <p className="text-center lg:text-start text-[16px] text-[525560] leading-[160%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
           </p>
           <br />
-          <p className="text-center lg:text-start text-[16px] text-[525560] leading-[160%] mb-[48px]">
+          <p className="text-center lg:text-start text-[16px] text-[525560] leading-[160%] mb-[15px] md:mb-[48px]">
             ‍Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.      
           </p>
           <button className="text-[16px] text-medium text-black bg-[#F2C94C] rounded lg px-[32px] py-[12px] w-full lg:w-auto">

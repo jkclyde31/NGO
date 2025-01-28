@@ -2,16 +2,16 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="pt-[96px]  ">
+    <div className="pt-[40px] lg:pt-[96px]  ">
       {/* Top =================================================================================================================================================================*/}
        <div className="px-[15px]">
-        <div className="max-w-[1280px] w-full mx-auto py-[94px] rounded-[25px] flex justify-center items-center flex-col mb-[84px] " 
+        <div className="max-w-[1280px] w-full mx-auto py-[94px] rounded-[25px] flex justify-center items-center flex-col mb-[35px] md:mb-[84px] " 
           style={{
               backgroundImage: `url('/CTA.png')`,
               backgroundSize: "cover", 
               backgroundPosition: "center",
             }}>
-                <h1 className="text-center text-[48px] max-w-[805px] mx-auto text-white font-bold">
+                <h1 className="text-center text-[38px] sm:text-[48px] max-w-[805px] mx-auto text-white font-bold px-[15px]">
                   You can contribute to provide a place for children with special needs!
                 </h1>
               {/* Buttons */}
@@ -49,7 +49,7 @@ const Footer = () => {
                 <div >
                    <p className="font-medium tracking-[2px] text-[16px]">NEXT EVENTS</p>
                     <div className="flex justify-between items-center gap-4 mt-[10px]">
-                      <p className="max-w-[381px] text-[28px] leading-[150%] font-bold">
+                      <p className="max-w-[381px] text-[22px] md:text-[28px] leading-[150%] font-bold">
                          A day with our wonderful children 
                       </p>
                       <Image src="/arrow.png" width={56} height={56}/>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <div >
                    <p className="font-medium tracking-[2px] text-[16px]">NEXT EVENTS</p>
                     <div className="flex justify-between items-center gap-4 mt-[10px]">
-                      <p className="max-w-[381px] text-[28px] leading-[150%] font-bold">
+                      <p className="max-w-[381px] text-[22px] md:text-[28px] leading-[150%] font-bold">
                       Seminar: Caring for children with autism
                       </p>
                       <Image src="/arrow.png" width={56} height={56}/>

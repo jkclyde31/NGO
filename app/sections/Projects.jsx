@@ -8,12 +8,12 @@ const ProjectsSection = () => {
   const sponsors = [sponsor, sponsor1, sponsor2, sponsor3, sponsor4, sponsor5];
 
   return (
-    <div className="px-[15px] py-[25px] md:py-[96px]">
+    <div className="px-[15px] py-[45px] md:py-[96px]">
          <div className="max-w-[1200px] mx-auto ">
             <p className="text-[16px] font-bold  tracking-[2px]  pb-[15px] md:pb-[32px]  text-center lg:text-start ">
             Projects we have done
             </p>
-            <h2 className="text-center lg:text-start text-[48px] font-bold text-[1D2130] leading-[120%] mb-[64px] max-w-[640px] mx-auto lg:mx-0">
+            <h2 className="text-center lg:text-start text-[38px] sm:text-[48px] font-bold text-[1D2130] leading-[110%] sm:leading-[120%] mb-[15px] md:mb-[64px] max-w-[640px] mx-auto lg:mx-0">
             We are creating a place where children with special needs can thrive
             </h2>
         </div>
