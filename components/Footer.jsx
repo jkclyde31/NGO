@@ -5,17 +5,17 @@ const Footer = () => {
     <div className="pt-[40px] lg:pt-[96px]  ">
       {/* Top =================================================================================================================================================================*/}
        <div className="px-[15px]">
-        <div className="max-w-[1280px] w-full mx-auto py-[94px] rounded-[25px] flex justify-center items-center flex-col mb-[35px] md:mb-[84px] " 
+        <div className="max-w-[1280px] w-full mx-auto py-[94px] rounded-[25px] flex justify-center items-center flex-col mb-[35px] md:mb-[84px] px-[15px]" 
           style={{
               backgroundImage: `url('/CTA.png')`,
               backgroundSize: "cover", 
               backgroundPosition: "center",
             }}>
-                <h1 className="text-center text-[38px] sm:text-[48px] max-w-[805px] mx-auto text-white font-bold px-[15px]">
+                <h1 className="text-center text-[38px] sm:text-[48px] max-w-[805px] mx-auto text-white font-bold ">
                   You can contribute to provide a place for children with special needs!
                 </h1>
               {/* Buttons */}
-              <div className=" flex max-w-[350px] justify-between w-full mt-[32px]"> 
+              <div className=" flex max-w-[350px] justify-between w-full mt-[32px] gap-5"> 
 
                 <button className='text-[16px] text-medium text-black bg-[#F2C94C] rounded-md px-[32px] py-[12px] '>
                   Join as a Volunteer
@@ -40,7 +40,7 @@ const Footer = () => {
           
           <div className="flex justify-between flex-col lg:flex-row items-center mt-[48px] mb-[86px] gap-8">
               {/* events box 1 */}
-              <div className="flex justify-between items-start gap-4 rounded-[25px] bg-[#F2C94C] max-w-[628px] min-h-[191px] p-[40px] ">
+              <div className="flex justify-between items-start gap-4 rounded-[25px] bg-[#F2C94C] max-w-[628px] min-h-[191px] p-[40px] flex-wrap md:flex-none">
                 <div>
                   <p className="text-[48px] font-medium leading-none">13</p>
                   <p className="text-[16px] font-medium leading-none">APR</p>
@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
 
            {/* events box 2 */}
-              <div className="flex justify-between items-start gap-4 rounded-[25px] bg-[#F2C94C] max-w-[628px] min-h-[191px] p-[40px] ">
+              <div className="flex justify-between items-start gap-4 rounded-[25px] bg-[#F2C94C] max-w-[628px] min-h-[191px] p-[40px] flex-wrap md:flex-none">
                 <div>
                   <p className="text-[48px] font-medium leading-none">25</p>
                   <p className="text-[16px] font-medium leading-none">APR</p>
@@ -122,7 +122,7 @@ const Footer = () => {
             {/* News letter */}
             <div className="max-w-[80%] lg:max-w-[400px]">
               <h3 className="text-white text-2xl font-bold mb-4">Subscribe to get latest updates</h3>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 <input 
                   type="email" 
                   placeholder="Your email" 
