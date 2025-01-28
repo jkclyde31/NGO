@@ -1,29 +1,6 @@
 import Image from "next/image";
 
 const WhatWeDo = () => {
-  const features = [
-    {
-      icon: "/icons/icon.png",
-      title: "Family support",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-    {
-      icon: "/icons/icon-1.png",
-      title: "Health benefits",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-    {
-      icon: "/icons/icon-2.png",
-      title: "Scholarships",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-    {
-      icon: "/icons/icon-3.png",
-      title: "Therapy",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    }
-  ];
-
   return (
     <div className="px-[15px] bg-[#FCEDC6] py-[15px]  lg:py-[96px]">
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-[25px] md:mt-[40px] mb-[15px] md:mb-[64px] space-y-8 md:space-y-0 md:space-x-12">
@@ -38,28 +15,86 @@ const WhatWeDo = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
           </p>
 
-          <div className="grid  gap-1 md:gap-8 mt-[10px]">
-            {features.map((feature, index) => (
-              <div key={index} className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
-                <div>
-                  <Image
-                    src={feature.icon}
-                    alt={feature.title}
-                    width={32}
-                    height={32}
-                    className="min-w-[32px] min-h-[32px]"
-                  />
-                </div>
-                <div className="max-w-[384px]">
-                  <h3 className="text-[24px] font-bold text-[#1D2130]">
-                    {feature.title}
-                  </h3>
-                  <p className="text-[16px] text-[#525560] leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
+          <div className="grid gap-1 md:gap-8 mt-[10px]">
+            <div className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
+              <div>
+                <Image
+                  src="/icons/icon.png"
+                  alt="Family support"
+                  width={32}
+                  height={32}
+                  className="min-w-[32px] min-h-[32px]"
+                />
               </div>
-            ))}
+              <div className="max-w-[384px]">
+                <h3 className="text-[24px] font-bold text-[#1D2130]">
+                  Family support
+                </h3>
+                <p className="text-[16px] text-[#525560] leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
+              <div>
+                <Image
+                  src="/icons/icon-1.png"
+                  alt="Health benefits"
+                  width={32}
+                  height={32}
+                  className="min-w-[32px] min-h-[32px]"
+                />
+              </div>
+              <div className="max-w-[384px]">
+                <h3 className="text-[24px] font-bold text-[#1D2130]">
+                  Health benefits
+                </h3>
+                <p className="text-[16px] text-[#525560] leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
+              <div>
+                <Image
+                  src="/icons/icon-2.png"
+                  alt="Scholarships"
+                  width={32}
+                  height={32}
+                  className="min-w-[32px] min-h-[32px]"
+                />
+              </div>
+              <div className="max-w-[384px]">
+                <h3 className="text-[24px] font-bold text-[#1D2130]">
+                  Scholarships
+                </h3>
+                <p className="text-[16px] text-[#525560] leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
+              <div>
+                <Image
+                  src="/icons/icon-3.png"
+                  alt="Therapy"
+                  width={32}
+                  height={32}
+                  className="min-w-[32px] min-h-[32px]"
+                />
+              </div>
+              <div className="max-w-[384px]">
+                <h3 className="text-[24px] font-bold text-[#1D2130]">
+                  Therapy
+                </h3>
+                <p className="text-[16px] text-[#525560] leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
