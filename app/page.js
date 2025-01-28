@@ -16,7 +16,6 @@ export default function Home() {
       <WhatWeDo />
       <ProjectsSection />
       <ChartSection />
-      <Footer />
 
 
     </div>

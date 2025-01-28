@@ -2,41 +2,43 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="pt-[96px]  px-15px">
+    <div className="pt-[96px]  ">
       {/* Top =================================================================================================================================================================*/}
-        <div className="max-w-[1280px] w-full mx-auto min-h-[400px] rounded-[25px] flex justify-center items-center flex-col mb-[84px]" 
-         style={{
-            backgroundImage: `url('/CTA.png')`,
-            backgroundSize: "cover", 
-            backgroundPosition: "center",
-          }}>
-              <h1 className="text-center text-[48px] max-w-[805px] mx-auto text-white font-bold">
-                 You can contribute to provide a place for children with special needs!
-              </h1>
-            {/* Buttons */}
-            <div className=" flex max-w-[350px] justify-between w-full mt-[32px]"> 
+       <div className="px-[15px]">
+        <div className="max-w-[1280px] w-full mx-auto py-[94px] rounded-[25px] flex justify-center items-center flex-col mb-[84px] " 
+          style={{
+              backgroundImage: `url('/CTA.png')`,
+              backgroundSize: "cover", 
+              backgroundPosition: "center",
+            }}>
+                <h1 className="text-center text-[48px] max-w-[805px] mx-auto text-white font-bold">
+                  You can contribute to provide a place for children with special needs!
+                </h1>
+              {/* Buttons */}
+              <div className=" flex max-w-[350px] justify-between w-full mt-[32px]"> 
 
-              <button className='text-[16px] text-medium text-black bg-[#F2C94C] rounded-md px-[32px] py-[12px] '>
-                Join as a Volunteer
-              </button>
+                <button className='text-[16px] text-medium text-black bg-[#F2C94C] rounded-md px-[32px] py-[12px] '>
+                  Join as a Volunteer
+                </button>
 
 
-              <button className='text-[16px] text-medium text-black bg-white rounded-md px-[32px] py-[12px] '>
-                Donate
-              </button>
-            </div>
-        </div>
+                <button className='text-[16px] text-medium text-black bg-white rounded-md px-[32px] py-[12px] '>
+                  Donate
+                </button>
+              </div>
+          </div>
+       </div>
 
 
         
         {/* mid =================================================================================================================================================================*/}
-        <div className="max-w-[1280px] w-full mx-auto"> 
+        <div className="max-w-[1280px] w-full mx-auto px-[15px]"> 
            <div className="flex justify-between items-center ">
               <p className="text-[40px] text-[1D2130] font-medium">Our Events</p>
               <div className="flex-1 border-t border-gray-200 mx-4"></div>
           </div>
           
-          <div className="flex justify-between items-center mt-[48px] mb-[86px]">
+          <div className="flex justify-between flex-col lg:flex-row items-center mt-[48px] mb-[86px] gap-8">
               {/* events box 1 */}
               <div className="flex justify-between items-start gap-4 rounded-[25px] bg-[#F2C94C] max-w-[628px] min-h-[191px] p-[40px] ">
                 <div>
@@ -76,8 +78,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom ============================================================================================================================================================================*/}
-        <div className="bg-black py-[96px] px-[110px]">
-          <div className="max-w-[1280px] w-full mx-auto flex justify-between items-center">
+        <div className="bg-black py-[96px] px-[5px] md:px-[110px]">
+          <div className="max-w-[1280px] w-full mx-auto flex flex-col lg:flex-row justify-between items-center gap-[50px]">
             {/* Logo */}
             <div className="flex items-center">
               <p className="text-[24px] text-white font-bold leading-[44px] tracking-[0px]">largerthan</p>
@@ -85,7 +87,7 @@ const Footer = () => {
             </div>
 
            {/* nav */}
-              <div className="flex justify-between items-center gap-8 max-w-[386px] w-full">
+              <div className="flex justify-between items-center gap-8 max-w-[80%] lg:max-w-[386px] w-full">
                 <div className="text-white">
                   <p className="font-bold mb-4">Home</p>
                   <ul className="space-y-2">
@@ -118,7 +120,7 @@ const Footer = () => {
               </div>
 
             {/* News letter */}
-            <div className="max-w-[400px]">
+            <div className="max-w-[80%] lg:max-w-[400px]">
               <h3 className="text-white text-2xl font-bold mb-4">Subscribe to get latest updates</h3>
               <div className="flex gap-2">
                 <input 
