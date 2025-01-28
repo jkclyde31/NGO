@@ -19,7 +19,7 @@ const WhatWeDo = () => {
             <div className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
               <div>
                 <Image
-                  src="/icon.png"
+                  src="/Icon.png"
                   alt="Family support"
                   width={32}
                   height={32}
@@ -39,7 +39,7 @@ const WhatWeDo = () => {
             <div className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
               <div>
                 <Image
-                  src="/icon1.png"
+                  src="/Icon1.png"
                   alt="Health benefits"
                   width={32}
                   height={32}
@@ -59,7 +59,7 @@ const WhatWeDo = () => {
             <div className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
               <div>
                 <Image
-                  src="/icon2.png"
+                  src="/Icon2.png"
                   alt="Scholarships"
                   width={32}
                   height={32}
@@ -79,7 +79,7 @@ const WhatWeDo = () => {
             <div className="space-y-4 flex justify-between items-center max-w-[436px] gap-4">
               <div>
                 <Image
-                  src="/icon3.png"
+                  src="/Icon3.png"
                   alt="Therapy"
                   width={32}
                   height={32}
