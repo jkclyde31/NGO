@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import { X } from 'lucide-react';
 
 import MenuDropDown from './MenuDropDown';
 import NavLogo from './NavLogo';
@@ -15,14 +16,12 @@ const Navbar = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Prevent body scroll when mobile menu is open
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
 
-    // Close mobile menu if the viewport size is changed
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setIsMobileMenuOpen(false);
@@ -40,7 +39,7 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const backdropVariants = {
+  const menuVariants = {
     hidden: { 
       opacity: 0,
       transition: {
@@ -57,39 +56,18 @@ const Navbar = () => {
     }
   };
 
-  const mobileMenuVariants = {
-    hidden: { 
-      y: "-100%",
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut"
-      }
-    },
-    visible: { 
-      y: 0,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut"
-      }
-    }
-  };
-
   return (
     <>
       <nav className='sticky top-0 h-[0px] bg-transparent border-transparent z-50 md:h-auto md:bg-white'>
-        {/* ROW */}
         <div className='mx-auto max-w-[1720px] px-2 sm:px-6 lg:px-8'>
-          {/* FLEX BOX */}
-          <div className='relative flex  h-none md:h-20 items-center'>
+          <div className='relative flex h-none md:h-20 items-center'>
             <MenuDropDown 
               setIsMobileMenuOpen={toggleMobileMenu} 
               isMobileMenuOpen={isMobileMenuOpen}
             />
-            {/* Logo and Nav Menu */}
             <div className='flex flex-1 items-center justify-center md:items-stretch md:justify-between'>
               <NavLogo/>
               <NavigationMenu navLinks={navLinks}/>
-              {/* <SocialLinks/> */}
               <button className='text-[16px] text-medium text-white bg-black rounded-md px-[32px] py-[12px] hidden md:block'>
                 Donate
               </button>
@@ -98,47 +76,42 @@ const Navbar = () => {
         </div>
       </nav>
 
-
-
-      {/* Mobile menu with Framer Motion */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={backdropVariants}
+          <motion.div 
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={menuVariants}
+            className='md:hidden fixed inset-0 bg-black z-[70]'
+          >
+            {/* Close Button */}
+            <button 
               onClick={() => setIsMobileMenuOpen(false)}
-              className='fixed inset-0 bg-black/10 backdrop-blur-xs z-[60] md:hidden'
-            />
-
-            {/* Mobile Menu */}
-            <motion.div 
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={mobileMenuVariants}
-              className='md:hidden fixed inset-x-0 top-[60px] bg-black z-[70] shadow-lg'
+              className='absolute top-4 right-4 p-2 text-white'
             >
-              <div className='space-y-1 px-2 pb-3 pt-2'>
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.id}
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={`${
-                      pathname === `${link.href}` ? 'bg-black' : ''
-                    } text-white block rounded-md px-3 py-2 text-base font-medium`}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
+              <X size={32} />
+            </button>
+
+            {/* Centered Content */}
+            <div className='h-full flex flex-col items-center justify-center space-y-8'>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.id}
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`${
+                    pathname === `${link.href}` ? 'text-gray-300' : 'text-white'
+                  } text-2xl font-medium hover:text-gray-300 transition-colors`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+              <div className='mt-8'>
                 <SocialLinks mobile={true}/>
               </div>
-            </motion.div>
-          </>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </>
