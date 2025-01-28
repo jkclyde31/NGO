@@ -19,77 +19,80 @@ const ProjectsSection = () => {
         </div>
 
         {/* Bottom */}
-        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row  justify-between gap-4 ">
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between gap-4">
          {/* Item 1 */}
-            <div className="bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px] rounded-xl"  style={{
-                backgroundImage: `url(${project1.src})`, 
+            <div 
+              className="project-card bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] rounded-xl relative group overflow-hidden h-[421px] flex flex-col"
+              style={{
+                backgroundImage: `url(${project1.src})`,
                 backgroundSize: "cover", 
                 backgroundPosition: "center",
-                position: "center", 
-            }} >
-      
-            <div className="max-w-[315px]" >
+            }}>
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div className="max-w-[315px] relative z-10 flex-grow" >
                 <h3 className="text-[28px] leading-[150%] font-bold text-[#FFFFFF] mb-[16px]">
                      Mission smile 1k: Outdoor charity
                 </h3>
-                <p className="text-[16px] leading-[160%] mb-[64px] text-[#FFFFFF]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                <p className="text-[16px] leading-[160%] text-[#FFFFFF]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.
                 </p>
             </div>
-                <button className='text-[16px] text-medium text-black bg-white rounded-md px-[32px] py-[12px] '>
+            <div className="relative z-10 pb-[48px]">
+                <button className='text-[16px] text-medium text-black bg-white rounded-md px-[32px] py-[12px]'>
                    Learn More
                 </button>
             </div>
-
-
+            </div>
 
              {/* Item 2 */}
-             <div className="bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px]  rounded-xl"  style={{
-                backgroundImage: `url(${project2.src})`, 
+             <div 
+              className="project-card bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] rounded-xl relative group overflow-hidden h-[421px] flex flex-col"
+              style={{
+                backgroundImage: `url(${project2.src})`,
                 backgroundSize: "cover", 
                 backgroundPosition: "center",
-                position: "center", 
-            }} >
-      
-            <div className="max-w-[315px]" >
+            }}>
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div className="max-w-[315px] relative z-10 flex-grow" >
                 <h3 className="text-[28px] leading-[150%] font-bold text-[#FFFFFF] mb-[16px]">
                 Weekly excursions
                 </h3>
-                <p className="text-[16px] leading-[160%] mb-[64px] text-[#FFFFFF]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                <p className="text-[16px] leading-[160%] text-[#FFFFFF]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.
                 </p>
             </div>
-                <button className='text-[16px] text-medium text-black bg-white rounded-md px-[32px] py-[12px] '>
+            <div className="relative z-10 pb-[48px]">
+                <button className='text-[16px] text-medium text-black bg-white rounded-md px-[32px] py-[12px]'>
                    Learn More
                 </button>
             </div>
-
-
+            </div>
 
                {/* Item 3 */}
-               <div className="bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] pb-[25px] md:pb-[55px]  rounded-xl"  style={{
-                backgroundImage: `url(${project3.src})`, 
-                backgroundSize: "cover", 
-                backgroundPosition: "center",
-                position: "center", 
-            }} >
-      
-            <div className="max-w-[315px]" >
+               <div 
+                className="project-card bg-none max-w-[100%] md:max-w-[420px] px-[25px] md:px-[48px] pt-[25px] md:pt-[85px] rounded-xl relative group overflow-hidden h-[421px] flex flex-col"
+                style={{
+                  backgroundImage: `url(${project3.src})`,
+                  backgroundSize: "cover", 
+                  backgroundPosition: "center",
+              }}>
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div className="max-w-[315px] relative z-10 flex-grow" >
                 <h3 className="text-[28px] leading-[150%] font-bold text-[#FFFFFF] mb-[16px]">
                 Monthly public awareness
                 </h3>
-                <p className="text-[16px] leading-[160%] mb-[64px] text-[#FFFFFF]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                <p className="text-[16px] leading-[160%] text-[#FFFFFF]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.
                 </p>
             </div>
-                <button className='text-[16px] text-medium text-black bg-white rounded-md px-[32px] py-[12px] '>
+            <div className="relative z-10 pb-[48px]">
+                <button className='text-[16px] text-medium text-black bg-white rounded-md px-[32px] py-[12px]'>
                    Learn More
                 </button>
             </div>
+            </div>
         </div>
-
     </div>
-   
   )
 }
 

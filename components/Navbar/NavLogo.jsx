@@ -7,9 +7,10 @@ const NavLogo = () => {
   return (
     <Link className='hidden md:flex flex-shrink-0 items-center' href='/'>
     <Image className='h-10 w-auto' src={logo} alt='PropertyPulse' />
-    <span className='hidden md:block text-black text-[24px] font-[roboto] font-bold ml-2'>
-      {siteInfo.company_name}
-    </span>
+    <div className="flex items-center">
+              <p className="text-[24px] text-black font-bold leading-[44px] tracking-[0px]">largerthan</p>
+              <span className="font-courgette text-black leading-[44px] text-[25px]">i</span>
+            </div>
   </Link>
   )
 }

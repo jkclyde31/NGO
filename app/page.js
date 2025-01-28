@@ -3,7 +3,7 @@ import AboutUs from "./sections/AboutUs";
 import WhatWeDo from "./sections/WhatWeDo";
 import ProjectsSection from "./sections/Projects";
 import ChartSection from "./sections/ChartSection";
-
+import Footer from "./sections/Footer";
 export const metadata = {
   title: "Homepage"
 }
@@ -16,6 +16,8 @@ export default function Home() {
       <WhatWeDo />
       <ProjectsSection />
       <ChartSection />
+      <Footer />
+
 
     </div>
   );
