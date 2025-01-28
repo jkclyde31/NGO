@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
 
       {/* Events Section */}
-      <div ref={eventsRef} className="max-w-[1280px] w-full mx-auto px-[15px]">
+      <div ref={eventsRef} className="max-w-[1280px] w-full mx-auto px-[15px]" id="events">
         <motion.div
           variants={eventsHeaderAnimation}
           initial="hidden"
@@ -135,7 +135,7 @@ const Footer = () => {
         animate={footerInView ? "visible" : "hidden"}
         className="bg-black py-[96px] px-[5px] md:px-[110px]"
       >
-        <div className="max-w-[1280px] w-full mx-auto flex flex-col lg:flex-row justify-between items-center gap-[50px]">
+        <div className="max-w-[1280px] w-full mx-auto flex flex-col lg:flex-row justify-between items-center gap-[50px]" id="contact">
           {/* Logo */}
           <motion.div variants={footerStagger.item} className="flex items-center">
             <p className="text-[24px] text-white font-bold leading-[44px] tracking-[0px]">largerthan</p>

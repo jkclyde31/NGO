@@ -34,6 +34,7 @@ const Banner = () => {
       style={{
         backgroundImage: `url(${'/images/bg-banner.png'})`,
       }}
+      id="home"
     >
       {/* text */}
       <div className="row max-w-[1700px] w-full mx-auto px-[15px]">

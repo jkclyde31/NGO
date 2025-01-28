@@ -8,7 +8,7 @@ const ProjectsSection = () => {
   const sponsors = [sponsor, sponsor1, sponsor2, sponsor3, sponsor4, sponsor5];
 
   return (
-    <div className="px-[15px] py-[45px] md:py-[96px]">
+    <div className="px-[15px] py-[45px] md:py-[96px]" id="projects">
          <div className="max-w-[1200px] mx-auto ">
             <p className="text-[16px] font-bold  tracking-[2px]  pb-[15px] md:pb-[32px]  text-center lg:text-start ">
             Projects we have done

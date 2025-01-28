@@ -42,7 +42,7 @@ const AboutUs = () => {
   });
 
   return (
-    <div className="px-[15px]">
+    <div className="px-[15px]" id="about">
       {/* Top */}
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col lg:flex-row justify-between items-center mt-[25px] md:mt-[40px] lg:mt-[86px] mb-[25px] md:mb-[64px] gap-12">
         {/* Left Side */}

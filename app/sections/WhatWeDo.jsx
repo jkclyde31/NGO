@@ -33,7 +33,7 @@ const WhatWeDo = () => {
   });
 
   return (
-    <div className="px-[15px] bg-[#FCEDC6] py-[15px] lg:py-[96px]">
+    <div className="px-[15px] bg-[#FCEDC6] py-[15px] lg:py-[96px]" id="services">
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-[25px] md:mt-[40px] mb-[15px] md:mb-[64px] space-y-8 md:space-y-0 md:space-x-12">
         <div className="w-full md:max-w-[607px]">
           {/* Header Section */}
